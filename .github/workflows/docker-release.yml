@@ -20,8 +20,6 @@ jobs:
         include:
           - os: ubuntu-24.04
             platform_pair: linux-amd64
-          - os: ubuntu-24.04-arm
-            platform_pair: linux-arm64
     runs-on: ${{ matrix.os }}
     steps:
 
