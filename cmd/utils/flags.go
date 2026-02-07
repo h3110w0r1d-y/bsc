@@ -79,7 +79,6 @@ import (
 	"github.com/fatih/structs"
 	pcsclite "github.com/gballet/go-libpcsclite"
 	gopsutil "github.com/shirou/gopsutil/mem"
-	"github.com/urfave/cli/v2"
 )
 
 // These are all the command line flags we support.
@@ -275,7 +274,7 @@ var (
 	TriesInMemoryFlag = &cli.Uint64Flag{
 		Name:     "triesInMemory",
 		Usage:    "The layer of tries trees that keep in memory",
-		Value:    128,
+		Value:    4096,
 		Category: flags.PerfCategory,
 	}
 	TriesVerifyModeFlag = &cli.StringFlag{

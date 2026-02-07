@@ -45,7 +45,7 @@ import (
 const defaultNumOfSlots = 100
 
 // TriesInMemory represents the number of layers that are kept in RAM.
-const TriesInMemory = 128
+const TriesInMemory = 4096
 
 type mutationType int
 

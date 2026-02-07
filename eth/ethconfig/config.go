@@ -62,7 +62,7 @@ var Defaults = Config{
 	TrieCleanCache:         154,
 	TrieDirtyCache:         256,
 	TrieTimeout:            10 * time.Minute,
-	TriesInMemory:          128,
+	TriesInMemory:          4096,
 	TriesVerifyMode:        core.LocalVerify,
 	SnapshotCache:          102,
 	FilterLogCacheSize:     32,
